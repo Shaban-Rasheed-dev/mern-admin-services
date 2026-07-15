@@ -32,8 +32,6 @@ cd client
 npm install
 \`\`\`
 
-L=http://localhost:3000
-\`\`\`
 
 ### Run Development Server
 
