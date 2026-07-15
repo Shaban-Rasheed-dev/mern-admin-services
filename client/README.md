@@ -1,16 +1,68 @@
-# React + Vite
+# MERN Admin Services — Client (Frontend)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React-based frontend for the MERN Admin Services application. Built with Vite, React, React Router, and Bootstrap.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- User authentication (Login/Signup) with JWT
+- Role-based redirection (Admin → Admin Dashboard, User → Home)
+- Admin panel: manage users, services, and contacts
+- Protected routes for admin-only pages
+- Contact form with backend integration
+- Responsive UI
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React (Vite)
+- React Router DOM
+- Bootstrap / CSS
+- React Toastify (notifications)
+- jwt-decode
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+- Node.js installed
+- Backend server running (see `/server` folder)
+
+### Installation
+
+\`\`\`bash
+cd client
+npm install
+\`\`\`
+
+### Environment Variables
+
+Create a `.env` file in the `client` folder:
+
+\`\`\`
+VITE_API_URL=http://localhost:3000
+\`\`\`
+
+### Run Development Server
+
+\`\`\`bash
+npm run dev
+\`\`\`
+
+App will run on `http://localhost:5173`
+
+## Build for Production
+
+\`\`\`bash
+npm run build
+\`\`\`
+
+## Folder Structure
+
+\`\`\`
+client/
+├── src/
+│   ├── components/
+│   ├── ContextAPI/
+│   ├── pages/
+│   └── App.jsx
+├── public/
+└── package.json
+\`\`\`
