@@ -32,12 +32,7 @@ cd client
 npm install
 \`\`\`
 
-### Environment Variables
-
-Create a `.env` file in the `client` folder:
-
-\`\`\`
-VITE_API_URL=http://localhost:3000
+L=http://localhost:3000
 \`\`\`
 
 ### Run Development Server
